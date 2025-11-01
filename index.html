@@ -7,33 +7,36 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/boxhorse-logo.png">
 </head>
-<body>
+<body class="bg-light">
 <!-- Header e Nav -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Logo Box Horse</a>
-                <a class="navbar-brand" href="#">Box Horse</a>
+                <a class="navbar-brand" href="#" aria-current="page">
+                    <img id="boxhorse-logo" src="./img/boxhorse-logo.png">
+                </a>
+                <a class="navbar-brand fs-2" id="boxhorse-name" href="index.html">Box Horse</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            <a class="nav-link active fs-3" aria-current="page" href="index.html">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link fs-3" href="#">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Produtos</a>
+                            <a class="nav-link fs-3" href="#">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link fs-3" href="#">Contato</a>
                         </li>
                     </ul>
-                    <span class="navbar-text">Navbar text with an inline element</span>
+                    <span class="navbar-text">Endereço: Rua dos Bobos, 0000</span>
                 </div>
             </div>
         </nav>
@@ -47,13 +50,21 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./img/vet-1.jpg" class="d-block w-100" alt="#">
+                        <img src="./img/vet-1.jpg" class="d-block w-100" alt="Veterinário examinando um cachorro.">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="fs-1">Box Horse</h1>
+                            <p class="fs-4">Aqui, todos os animais são importantes!</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/vet-2.jpg" class="d-block w-100" alt="#">
+                        <img src="./img/vet-2.jpg" class="d-block w-100" alt="Duas veterinárias examinando um animal.">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h1 class="fs-1">Box Horse</h1>
+                            <p class="fs-4">Aqui, todos os animais são importantes!</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="./img/vet-3.jpg" class="d-block w-100" alt="#">
+                        <img src="./img/vet-3.jpg" class="d-block w-100" alt="Veterinário examinando um cachorro.">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#indicadores" data-bs-slide="prev">
@@ -69,7 +80,83 @@
     </header>
 <!-- Main -->
     <main class="container text-center">
-        <h1>Box Horse | Pet Shop e Veterinária</h1>
+        <h1 class="mt-4">Box Horse | Pet Shop e Veterinária</h1>
+        <section class="container mt-3">
+            <p class="fs-3">Fundada em 2003 para prover cuidados dignos para animais e pets da região, nós da Box Horse zelamos pelo cuidado e bons tratos animais, com o objetivo de que todos os animais saiam cuidados, já que todos eles são importantes para nós!</p>
+        </section>
+<!-- Avaliações de clientes -->
+        <section class="container text-center justify-content-center">
+            <h2 class="mb-4">Confira algumas avaliações de nossos clientes:</h2>
+            <div class="row">
+<!-- Primeiro Card -->
+                <div class="col-3">
+                    <div class="card border border-black bg-success" style="width: 18rem;">
+                        <img src="./img/cliente_1.png" class="card-img-top" alt="Astarion, do jogo Baldur's Gate 3">
+                        <div class="card-body">
+                            <p class="card-text text-light">"Serviço de excelentíssima qualidade, meu morcego saiu super feliz."</p>
+                            <p class="card-text fs-5 text-light"><b>- Astarion</b></p>
+                        </div>
+                    </div>
+                </div>
+<!-- Segundo Card -->
+                <div class="col-3">
+                    <div class="card border border-black bg-success" style="width: 18rem;">
+                        <img src="./img/cliente_2.jpg" class="card-img-top" alt="Gregory House, da série House M.D.">
+                        <div class="card-body">
+                            <p class="card-text text-light">"Meu cavalo estava doente antes de ir para a Box Horse, felizmente não era Lupus."</p>
+                            <p class="card-text fs-5 text-light"><b>- Gregory House</b></p>
+                        </div>
+                    </div>
+                </div>
+<!-- Terceiro Card -->
+                <div class="col-3">
+                    <div class="card border border-black bg-success" style="width: 18rem;">
+                        <img src="./img/cliente_3.jpg" class="card-img-top" alt="James Doakes, da série Dexter.">
+                        <div class="card-body">
+                            <p class="card-text text-light">"A Box Horse me surpreendeu, extremamente profissionais e cuidadosos com o meu gado."</p>
+                            <p class="card-text fs-5 text-light"><b>- James Doakes</b></p>
+                        </div>
+                    </div>
+                </div>
+<!-- Quarto Card -->
+                <div class="col-3">
+                    <div class="card border border-black bg-success" style="width: 18rem;">
+                        <img src="./img/cliente_4.jpg" class="card-img-top" alt="Cabrito Farinha, mascote local da Box Horse.">
+                        <div class="card-body">
+                            <p class="card-text text-light">"Bééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééééé."</p>
+                            <p class="card-text fs-5 text-light"><b>- Farinha</b></p>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </section>
     </main>
+<!-- Serviços disponíveis -->
+    <section class="container mt-4">
+        <h2>Serviços oferecidos pela Box Horse:</h2>
+<!-- Pet Shop -->
+        <div class="container mt-3 mb-2">
+            <h3 class="d-inline align-middle">Pet Shop: </h3>
+            <p class="d-inline align-middle fs-4">Em nossa Pet Shop, você encontra produtos dos mais variados tipos e sabores para satisfazer todas as necessidades do seu animal.</p>
+        </div>
+<!-- Veterinário -->
+        <div class="container mb-2">
+            <h3 class="d-inline align-middle">Veterinário: </h3>
+            <p class="d-inline align-middle fs-4">Nossa clínica veterinária é especializada em tratar animais de variados portes e espécies, garantindo o melhor e mais eficaz tratamento da região!</p>
+        </div>
+<!-- Banho e Tosa -->
+        <div class="container">
+            <h3 class="d-inline align-middle">Banho e tosa: </h3>
+            <p class="d-inline align-middle fs-4">Seu animal necessita de cuidados estéticos? A Box Horse oferece serviços estéticos personalizados para todos os animais, garantindo que todos recebam os cuidados que merecem!</p>
+        </div>
+    </section>
+<!-- Contato -->
+    <section class="container text-center mt-5">
+        <h2>Entre em contato:</h2>
+        <div class="justify-content-start">
+            <p>E-mail: contato@boxhorse.com.br</p>
+            <p>WhatsApp: 3476-3443</p>
+        </div>
+    </section>
 </body>
 </html>
